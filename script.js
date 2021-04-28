@@ -102,13 +102,29 @@ function deactivateFullscreen() {
 // THEME WHITE/BLECK
 const bt2 = document.querySelector('#theme');
 const knopka = document.querySelector(".themesvet");
+const doc = document.querySelector("body");
+const tlt = document.querySelector(".header-title");
+const git = document.querySelector(".github");
+const rss = document.querySelector(".rss");
+const rss_year = document.querySelector(".rss-year");
+
 bt2.addEventListener('click', event => {
 
     if (event.target.className == 'themesvet') {
         knopka.classList.add("light");
+        doc.classList.add("light");
+        tlt.classList.add("light");
+        git.classList.add("invert");
+        rss.classList.add("invert");
+        rss_year.classList.add("invert");
 
     } else {
         knopka.classList.remove('light');
+        doc.classList.remove('light');
+        tlt.classList.remove('light');
+        git.classList.remove('invert');
+        rss.classList.remove('invert');
+        rss_year.classList.remove('invert');
 
     }
 });
