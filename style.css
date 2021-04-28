@@ -265,6 +265,27 @@ body {
     background-image: url("assets/svg/fullscreen-exit.svg");
 }
 
+.themesvet {
+    display: inline-block;
+    vertical-align: middle;
+    position: fixed;
+    top: 120px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: radial-gradient(50% 50%, white, gray);
+    outline: 0;
+    background-size: contain;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.themesvet:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, .7);
+    background: radial-gradient(50% 50%, white, yellow);
+}
+
 .footer {
     border-top: 1px solid;
     border-image-slice: 1;
