@@ -97,3 +97,34 @@ function deactivateFullscreen() {
         document.webkitExitFullscreen();
     }
 };
+
+// Notes/Letters
+
+const btn1 = document.querySelectorAll(".btn");
+const container = document.getElementById("btn-container");
+
+container.addEventListener('click', event => {
+    if (event.target.classList.contains('btn')) {
+        btn1.forEach((el) => {
+            if (el.classList.contains('btn-active')) {
+                el.classList.remove('btn-active');
+            }
+        }); {
+            event.target.classList.add('btn-active');
+        }
+    }
+    if (event.target.className == 'btn btn-letters btn-active') {
+        COLLECTION.forEach((el) => {
+
+            el.classList.add('letter');
+        });
+
+    } else {
+        COLLECTION.forEach((el) => {
+            if (el.classList.contains('letter')) {
+                el.classList.remove('letter');
+            }
+        });
+    }
+
+});
