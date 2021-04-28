@@ -291,6 +291,30 @@ body {
     background: radial-gradient(50% 50%, white, yellow);
 }
 
+body.light {
+    background: #afcae0;
+}
+
+.header-title.light {
+    color: rgb(0, 0, 0);
+}
+
+.github.invert {
+    color: invert(100%);
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.rss.invert {
+    color: invert(100%);
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.rss-year.invert {
+    color: invert(100%);
+}
+
 .footer {
     border-top: 1px solid;
     border-image-slice: 1;
