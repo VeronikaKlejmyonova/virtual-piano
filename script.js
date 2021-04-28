@@ -98,6 +98,21 @@ function deactivateFullscreen() {
     }
 };
 
+
+// THEME WHITE/BLECK
+const bt2 = document.querySelector('#theme');
+const knopka = document.querySelector(".themesvet");
+bt2.addEventListener('click', event => {
+
+    if (event.target.className == 'themesvet') {
+        knopka.classList.add("light");
+
+    } else {
+        knopka.classList.remove('light');
+
+    }
+});
+
 // Notes/Letters
 
 const btn1 = document.querySelectorAll(".btn");
